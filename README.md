@@ -14,9 +14,7 @@
 
 The Todo App lets you handle your day better and achieve all of your daily todos.
 
-> **You can take a look at the backend repo [here](https://github.com/gilgg/todo-app-backend)**
-
-> **Go to [Website](https://gil-todo-app.netlify.app/)**
+> **Go to [Website](https://gil-todo-app-firebase.netlify.app/)**
 
 <br />
 
@@ -36,10 +34,7 @@ The Todo App lets you handle your day better and achieve all of your daily todos
 ![SASS Icon](https://i.ibb.co/2M5yfGb/sass-logo.png, "SASS")
 ![JavaScript Icon](https://i.ibb.co/L5RS8g1/Group-11.png, "JavaScript")
 ![React Icon](https://i.ibb.co/BBFKyz9/Group-9.png, "React")
-![Nodejs Icon](https://i.ibb.co/1KjfZ9L/Group-8.png, "Nodejs")
-![Express Icon](https://i.ibb.co/4J71gTL/express-logo.png, "Express")
-![MongoDB Icon](https://i.ibb.co/KXG94Kc/Group-10.png, "MongoDB")
-![JWT Icon](https://i.ibb.co/qRrfYPS/jwt-logo.png, "JWT")
+![Firebase Icon](https://i.ibb.co/vwP5wyy/firebase-logo.png, "Firebase")
 
 <br />
 
