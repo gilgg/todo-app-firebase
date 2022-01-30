@@ -1,0 +1,68 @@
+@import "../../sass/colors";
+@import "../../sass/fonts";
+
+.btn {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  font-family: $font-family;
+  color: $color-theme;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &.login,
+  &.signup {
+    margin-bottom: 1.5rem;
+  }
+
+  &.addtodo,
+  &.update {
+    padding: 0 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &.login,
+  &.signup,
+  &.logout {
+    padding: 1rem 5rem;
+    font-size: 1.7rem;
+  }
+
+  &.login,
+  &.signup,
+  &.addtodo,
+  &.update {
+    background: linear-gradient(
+      90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%
+    );
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(93, 12, 255, 0.8) 0%,
+        rgba(155, 0, 250, 0.8) 100%
+      );
+    }
+  }
+
+  &.logout {
+    background: linear-gradient(
+      90deg,
+      rgba(230, 49, 25, 1) 0%,
+      rgba(226, 88, 69, 1) 100%
+    );
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(230, 49, 25, 0.8) 0%,
+        rgba(226, 88, 69, 0.8) 100%
+      );
+    }
+  }
+}

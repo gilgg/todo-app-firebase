@@ -1,0 +1,20 @@
+@import "./colors";
+@import "./fonts";
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.dark {
+  background-color: $color-theme-dark;
+
+  &.todo-form-input {
+    color: $color-theme;
+    background-color: $color-theme-dark;
+  }
+
+  h1 {
+    color: $color-theme;
+  }
+}

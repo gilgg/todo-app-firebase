@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import { Switch, Route, Redirect } from "react-router-dom";
+import useInit from "./hooks/useInit";
+import LoginPage from "./pages/LoginPage";
+import TodoPage from "./pages/TodoPage";
 
-function App() {
+const App = () => {
+  const isLoggedIn = useInit();
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Switch>
+        <Route path="/login">{!isLoggedIn && <LoginPage />}</Route>
+        <Route path="/todos">{isLoggedIn && <TodoPage />}</Route>
+        <Route path="/">
+          {!isLoggedIn && <Redirect to="/login" />}
+          {isLoggedIn && <Redirect to="/todos" />}
+        </Route>
+      </Switch>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,14 @@
+.todos-container {
+  margin: 0 auto 20rem auto;
+  padding: 3rem 1.5rem;
+  min-height: 50rem;
+  width: 45rem;
+  background-color: #fff;
+  border-radius: 4px;
+
+  &-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #222;
+  }
+}

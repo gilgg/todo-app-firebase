@@ -1,0 +1,56 @@
+@import "../../sass/fonts";
+@import "../../sass/colors";
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20rem auto;
+  padding: 3rem 4rem;
+  min-height: 50rem;
+  width: 45rem;
+  background-color: $color-theme-dark;
+  border-radius: 4px;
+
+  &-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3.5rem;
+    color: $color-theme;
+  }
+
+  &-email,
+  &-password {
+    width: 100%;
+  }
+
+  &-email {
+    margin-bottom: 1.5rem;
+  }
+
+  &-password {
+    margin-bottom: 3rem;
+  }
+
+  label {
+    font-size: 1.5rem;
+    color: $color-theme;
+  }
+
+  input {
+    padding-left: 1rem;
+    height: 4rem;
+    width: 100%;
+    font-family: $font-family;
+    color: $color-theme-dark;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: $color-theme;
+    cursor: pointer;
+  }
+}
